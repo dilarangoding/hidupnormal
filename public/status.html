@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hidup Normal - Status</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div style="padding-top: 5%;">
+            <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Check Status</h5>
+                    <p class="card-text">Silahkan masukan kode:</p>
+                    <form class="from-inline" id="status-form">
+                        <div class="form-group">
+                            <input required class="form-control" type="text" id="KodeInput" placeholder="Kode Rahasia">
+                        </div>
+                        <a href="/" class="btn btn-secondary text-white float-left" type="submit"> Home </a>
+                        <button class="btn btn-dark float-right" type="submit"> Check </button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div id="errorAlert" class="alert alert-danger" role="alert"
+                style="display:none; width: 18rem; margin-left: auto; margin-right: auto;"></div>
+            <div class="card" id="notfinished"
+                style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Sabar..</h5>
+                    <p class="card-text">Anda masih harus melewati <strong><span id="total"></span></strong> hari lagi
+                        tanpa media sosial.</p>
+                </div>
+            </div>
+
+            <div class="card" id="finished" style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Selamat!</h5>
+                    <p class="card-text">Masa detoksmu sudah selesai. Berikut adalah data Anda:</p>
+                    <label for="password">Password:</label>
+                    <input type="text" class="form-control mb-2" id="password" readonly>
+                </div>
+            </div>
+            <br>
+            <p style="width: 18rem; margin-left: auto; margin-right: auto; font-size: 80%;"
+                class="text-center text-muted">
+                Developed with <span style="color: red;">love</span></p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/status.js"></script>
+</body>
+
+</html>

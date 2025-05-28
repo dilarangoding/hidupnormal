@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hidup Normal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <meta name="description" content="Anda ingin hidup normal?">
+</head>
+
+<body>
+    <div class="container">
+        <div style="padding-top: 5%;">
+            <div id="thebody">
+                <div class="card" id="pilih" style="width: 18rem; margin-left: auto; margin-right: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pilih tanggal</h5>
+                        <p class="card-text">Mau sampai kapan Anda hidup normal?</p>
+                        <form class="from-inline" id="generate-form">
+                            <div class="form-group">
+                                <input required class="form-control" type="date" id="date">
+                            </div>
+                            <button class="btn btn-dark float-right" type="submit"> Ok </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card" id="hasil"
+                    style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="yeay">Okaaay</h5>
+                        <p class="card-text">Anda tidak akan membuka akun media sosial sampai tanggal
+                            <strong><span id="t"></span></strong>, apabila mengikuti langkah-langkah berikut!
+                        </p>
+                        <button class="btn btn-dark float-right" id="btnhasil">Next</button>
+                    </div>
+                </div>
+
+                <div class="card" id="langkah1"
+                    style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                    <div class="card-body">
+                        <p class="card-text text-muted">1. Ganti password akun anda dengan password di bawah ini:</p>
+                        <div class="form-group">
+                            <input id="password" class="form-control" type="text" readonly>
+                        </div>
+                        <button class="btn btn-dark" id="btnlangkah1back">Back</button>
+                        <button class="btn btn-dark float-right" id="btnlangkah1">Next</button>
+                    </div>
+                </div>
+
+                <div class="card" id="langkah2"
+                    style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                    <div class="card-body">
+                        <p class="card-text text-muted">2. Ganti email akun anda dengan email di bawah ini:</p>
+                        <div class="form-group">
+                            <input id="email" class="form-control" type="text" readonly>
+                        </div>
+                        <button class="btn btn-dark" id="btnlangkah2back">Back</button>
+                        <button class="btn btn-dark float-right" id="btnlangkah2">Next</button>
+                    </div>
+                </div>
+
+                <div class="card" id="langkah3"
+                    style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                    <div class="card-body">
+                        <p class="card-text text-muted">3. Salin dan simpan kode di bawah ini di tempat yang aman:</p>
+                        <div class="form-group">
+                            <input id="code" class="form-control" type="text" readonly>
+                        </div>
+                        <p class="card-text text-muted">Password bisa dilihat kembali melalui menu status.
+                            <strong>Selamat menjalani hidup normal!</strong>
+                        </p>
+                        <button class="btn btn-dark" id="btnlangkah3back">Back</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" id="iniapaan" style="width: 18rem; margin-left: auto; margin-right: auto; display: none;">
+                <div class="card-body">
+                    <p class="card-text">
+                        Aplikasi ini dibuat dengan tujuan untuk membantu Anda menjauh dari akun media sosial
+                        yang mulai mengganggu kegiatan di kehidupan normal Anda. Misal, Anda merasa mulai kecanduan
+                        dan rasa kecanduan seperti tidak bisa lepas untuk memeriksa notifikasi membuat Anda susah
+                        untuk berkonsentrasi dengan pekerjaan Anda. <br><br>
+                        Cara kerja aplikasi ini adalah, pertama, Anda menentukan mau sampai kapan akan menjalani hidup
+                        normal
+                        tanpa gangguan media sosial, lalu aplikasi akan memberikan Anda <em>random</em> password dan
+                        email yang susah diingat.
+                        Anda akan diminta untuk mengganti password dan email yang sudah diberikan dan <em>logout</em>.
+                        Setelah selesai diganti, aplikasi
+                        akan memberikan sebuah <strong>kode</strong> untuk Anda simpan. Dengan kode tersebut Anda bisa
+                        mendapatkan
+                        password dan email Anda kembali melalui tombol status di bawah.
+                        <br><br>
+                        <strong>Aplikasi tidak menyimpan password Anda</strong>, melainkan Anda sendirilah yang
+                        menyimpannya,
+                        karena password sebenarnya ada pada kode yang aplikasi berikan, hanya saja di-enkripsi supaya
+                        tidak
+                        bisa dibaca.
+                        <br>
+                        <br>
+                        <strong>web app ini pertama kali dibuat oleh <a href="https://twitter.com/bitxt" class="">bitxt aka farhan </a></strong>
+                        repo asli bisa dicek <a href="https://github.com/gitfarhan/hidupnormal" class="">disini</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto;">
+            <div class="card-body">
+                <a href="/status" class="btn btn-outline-dark float-right"> Status </a>
+                <button class="btn btn-outline-dark" id="apaan"> Ini apaan? </button>
+                <button class="btn btn-dark" id="btnapaan" style="display: none;">Back</button>
+            </div>
+        </div>
+        <br>
+        <p style="width: 18rem; margin-left: auto; margin-right: auto; font-size: 80%;" class="text-center text-muted">
+            Developed with <span style="color: red;">love</span></p>
+    </div>
+    <br>
+    <div id="errorAlert" class="alert alert-danger" role="alert"
+        style="display:none; width: 18rem; margin-left: auto; margin-right: auto;"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
